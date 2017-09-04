@@ -8,7 +8,7 @@ h1{
 	color: whitesmoke;
 	text-align: center;
 	text-shadow: 2px 2px black;
-	font-size: 5rem;
+	font-size: 10vw;
 }
 
 .nav-bar{
@@ -32,12 +32,16 @@ h1{
 }
 
 .work{
+	padding: 2.5vw;
 	height: auto;
 	width: auto;
+	font-size: 0;
 }
 .work img{
-	width: 44.8%;
-	margin: 2.5%;
+	border: 1px solid rgba(200,200,200,0.5);
+	width: calc(45vw - 2px);
+	margin: 1.25vw;
+	height: 5ovw;
 	display: inline-block;
 }
 
@@ -99,21 +103,29 @@ h1{
 
 /*Small screens*/
 @media only screen and (max-width: 700px){
+
 	.work img{
-	margin: 2%;
-	display: inline-block;
-	width: 96%;
-	height: 50%;
-	border: 2px solid red;
-}
+	margin: 2.5vw 0px 2.5vw 0px;
+	width: calc(95vw - 2px);
+	height: 100vw;
+	}
+
+	.title {
+	font-size: 12vw;
+	transform: translateY(calc(50vh - 50%));
+	}
+
+	.title b {
+	word-spacing: 100vw;
+	}
 
 }
 /*large screens*/
 @media only screen and (min-width: 1400px){
+
 	.work img{
-	margin: 2%;
-	display: inline-block;
-	width: 20.6%;
-	height: 50%;
-	border: 2px solid black;
+	margin: 1.25vw;
+	width: calc(21.25vw - 2px);
+	height: 21.25vw;
+	}
 }
