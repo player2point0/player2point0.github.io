@@ -1,7 +1,3 @@
-
-//need to disable jump up animation
-
-
 function hidePopup()
 {
 	$(".popup-background").css("display","none");
