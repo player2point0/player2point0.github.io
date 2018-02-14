@@ -27,6 +27,20 @@ h1{
 	display: inline-block;
 }
 
+.logo{
+	height : 4vw;
+	width : 4vw;
+	padding: 0.5vw;
+	background-color: rgba(255, 255, 255, 0.15);
+	border-radius: 50%;
+}
+
+#logos
+{
+	padding-right: 2vw;
+	float: right;
+}
+
 .work{
 	padding: 1.25%;
 	font-size: 0;
