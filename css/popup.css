@@ -4,7 +4,7 @@
 	position: fixed;
 	width: 100%;
 	height: 100vh;
-	background-color: rgba(150, 100, 100, 0.50);
+	background-color: rgba(0, 0, 0, 0.50);
 }
 
 .popup-box {
@@ -12,14 +12,21 @@
 	height: 75vh;
 	transform: translate3D(50%,15%,0);
 	background-color: aliceblue;
+	border-radius: 5px;
 }
 
 .popup-exit {
+	border: none;
+	border-radius: 5px;
 	margin: 1vw;
 	float: right;
-	background-color: rgba(255, 0, 0, 0.75);
+	background-color: rgba(255, 100, 100, 1);
 	width: 3vw;
 	height: 3vw;
+}
+
+.popup-exit:hover {
+	background-color: rgba(255, 100, 100, 0.75);
 }
 
 .popup-link {
@@ -45,6 +52,7 @@
 }
 
 .popup-description {
+	font-size: 1.5vw;
 	padding: 1%;
 	border: 1px solid rgba(100,100,100,0.2);
 	border-radius: 1px;
@@ -59,5 +67,5 @@
 		width: 75%;
 		height: 75vh;
 		transform: translate3D(12.5vw,12.5vh,0);
-	}		
+	}
 }
