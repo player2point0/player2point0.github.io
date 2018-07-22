@@ -73,6 +73,7 @@ h1{
 }
 
 #footer{
+	padding: 5px;
 	color: whitesmoke;
 	text-align: center;
 	font-size: 1.5vw;
@@ -81,12 +82,12 @@ h1{
 
 
 /*Small screens*/
-@media only screen and (max-width: 700px){
-
+@media only screen and (max-width: 700px)
+{
 	.work img{
 		margin: 2.5vw 0px 2.5vw 0px;
 		width: calc(95vw - 2px);
-		height: 100vw;
+		height: calc(95vw - 2px);
 	}
 
 	.title {
