@@ -40,8 +40,7 @@ h1{
 .logo:hover{
 	background-color: rgba(255, 255, 255, 0.1);
 }
-#logos
-{
+#logos{
 	padding-right: 2vw;
 	float: right;
 }
@@ -84,6 +83,17 @@ h1{
 /*Small screens*/
 @media only screen and (max-width: 700px)
 {
+	.logo {
+		height : 7vw;
+		width : 7vw;
+	}
+	
+	.nav-bar a{
+		padding: 0.25vw;
+		font-size: 7vw;
+		display: inline-block;
+	}
+	
 	.work img{
 		margin: 2.5vw 0px 2.5vw 0px;
 		width: calc(95vw - 2px);
