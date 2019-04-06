@@ -5,7 +5,7 @@ function hidePopup()
 
 function showPopup(title,description,link,github)
 {
-	$(".popup-background").css("display","block");
+	$(".popup-background").css("display","inline-grid");
 
 	$(".popup-title").text(title);
 	$(".popup-description").text(description);

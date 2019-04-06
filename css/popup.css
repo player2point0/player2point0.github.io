@@ -1,10 +1,13 @@
 *{
 	margin: 0;
 	padding: 0;
+	font-family: 'Open Sans', sans-serif;
 }
 
 .popup-background {
 	display: none;
+	grid-template-columns: 1fr;
+	align-content: center;
 	z-index: 1000;
 	position: fixed;
 	width: 100%;
@@ -13,54 +16,50 @@
 }
 
 .popup-box {
-	width: 70vw;
-	height: 80vh;
-	transform: translate3D(15vw,10vh,0);
+	display: inline-grid; 
+	margin: auto;
+	width: 70%;
 	background-color: aliceblue;
 	border-radius: 5px;
+}
+
+#top-row{
+	border: 1px solid rgba(100,100,100,0.2);
+	display: inline-grid;
+	grid-template-columns: 10fr 1fr;
+	align-content: center;
+}
+
+#bottom-row{
+	border: 1px solid rgba(100,100,100,0.2);
+	display: inline-grid;
+	grid-template-columns: 1fr 1fr;
+	align-content: center;
 }
 
 .popup-exit {
 	border: none;
 	border-radius: 5px;
-	margin: 1vw;
-	float: right;
-	background-color: rgba(255, 100, 100, 1);
-	width: 5vw;
-	height: 5vw;
+	background-color: #ff6464;
+	width: 75%;
+	height: 75%;
+	font-size: 2em;
+	margin: auto;
 }
-
 .popup-exit:hover {
 	background-color: rgba(255, 100, 100, 0.75);
-}
-
-.popup-link {
-	font-size: 2rem;
-	float: right;
-	padding-right: 1rem;
-	text-decoration: none;
-	color: black;
-}
-
-.popup-link-github {
-	font-size: 2rem;
-	float: right;
-	padding-right: 1rem;
-	text-decoration: none;
-	color: black;
 }
 
 .popup-title {
 	color: black;
 	text-shadow: none;
 	font-size: 5vw;
-	margin: 2vw;
-	padding: 1%;
 	text-align: center;
 }
 
 .popup-description {
-	font-size: 1.5vw;
+	border: 1px solid red;
+	font-size: 1.5em;
 	padding: 1%;
 	border: 1px solid rgba(100,100,100,0.2);
 	border-radius: 1px;
@@ -70,20 +69,42 @@
 	overflow: auto;
 }
 
+.popup-link{
+	text-align: center;
+	font-size: 2rem;
+	padding: 10px;
+	text-decoration: none;
+	color: black;
+}
+.popup-link:hover{
+	color: grey;
+}
+
+
 /*Small screens*/
 @media only screen and (max-width: 700px){
 	
+	.popup-box {
+		width: 90%;
+	}
+
+	#top-row{
+		grid-template-columns: 5fr 1fr;
+	}
+
 	.popup-title {
-		padding: 2vh;
-		font-size: 7.5vw;
+		font-size: 2em;
 	}
 	
 	.popup-box h2{
-		font-size: 4vw;
+		font-size: 1em;
 	}
-	
+
+	.popup-link{
+		font-size: 1em;	
+	}
+
 	.popup-exit {
-		width: 10vw;
-		height: 10vw;
-	}
+		font-size: 1em;
+	}	
 }
