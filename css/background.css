@@ -10,21 +10,6 @@
 #websites{
 	background-image: url(/Images/Temp-min.jpeg);
 }
-#miscellaneous{
-	background-image: url(/Images/Sink-min.jpg);
-}
-#apps{
-	background-image: url(/Images/Phone-min.jpeg);
-}
-#games-work{
-	background: linear-gradient(#010d1d, #afbfe0); 
-}
-#websites-work{
-	background: linear-gradient(#d3d2ce, #eaeef7); 
-}
-#apps-work{
-	background: linear-gradient(#eff2fb, #819977); 
-}
-#miscellaneous-work{
-	background: linear-gradient(#1b300f, black); 
+#ai{
+	background-image: url(/Images/Robot.jpg);
 }

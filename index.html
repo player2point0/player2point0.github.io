@@ -4,12 +4,9 @@
 	<title>Nathan Nash</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<link rel="shortcut icon" type="image/x-icon" href="Images/favicon.ico">
-
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-
 	<link href ="/css/style.css" type="text/css" rel = "stylesheet">
 	<link href="/css/popup.css" type="text/css" rel="stylesheet">
 	<link href="/css/background.css" type="text/css" rel="stylesheet">
@@ -20,9 +17,8 @@
 	<nav class="nav-bar">
 		<a href=#home>Home</a>
 		<a class="mobile-hidden" href=#websites>Websites</a>
+		<a class="mobile-hidden" href=#ai>AI</a>
 		<a class="mobile-hidden" href=#games>Games</a>
-		<!--<a class="mobile-hidden" href=#apps>Apps</a>-->
-		<a class="mobile-hidden" href=#miscellaneous>Miscellaneous</a>
 		<div id="logos">
 			<a href="https://www.instructables.com/member/nathan%20nash/" target="_blank"><img src="Logos/robot.png" class="logo"></a>
 			<a href="https://github.com/player2point0" target="_blank"><img src="Logos/github.png" class="logo"></a>
@@ -35,7 +31,7 @@
 				<h1 class="popup-title">Title</h1>
 				<button class="popup-exit" onclick="hidePopup()">X</button>		
 			</div>
-			<h2 class="popup-description">Game 1</h2>
+			<h2 class="popup-description">Description</h2>
 			<div id="bottom-row">
 				<a href="#" class="popup-link">Github Link</a>
 				<a href="#" class="popup-link">Project Link</a>	
@@ -45,6 +41,10 @@
 
 	<div class="landing-page" id="home">
 		<h1 class="title">Hi, I'm Nathan</h1>
+	</div>
+
+	<div id="bio">
+		
 	</div>
 
 	<div class="landing-page" id="websites">
@@ -59,6 +59,18 @@
 		<img onclick="showPopup('Weather Wear','A wear app that advises on what to wear for a given duration, made for free code camp.','https://github.com/player2point0/weather-wear','https://player2point0.github.io/weather-wear/')" src = "Images/WeatherWear.png">
 		<img onclick="showPopup('Wiki Viewer','A random wiki viewer with endless scroll and a search feature, made for free code camp.','https://github.com/player2point0/wiki-viewer','https://player2point0.github.io/wiki-viewer/')" src = "Images/WikiViewer.png">
 		<img onclick="showPopup('Spotify Shuffle','A music player that plays songs from your spotify library using youtube. Can take a while to load.','https://github.com/player2point0/spotify-shuffle','https://player2point0.github.io/spotify-shuffle/')" src = "Images/SpotifyShuffle.png">
+		<img onclick="showPopup('Bloom','A randomly colored set of rotating shapes of increasing size and number of sides. Originally intended to look like a flower but that didn\'t really work out.' ,'https://github.com/player2point0/bloom','https://player2point0.github.io/bloom/')" src = "Images/Bloom.png">
+		<img onclick="showPopup('Maurer Rose','An implementation of a Maurer Rose with random parameters in P5.js.','https://github.com/player2point0/maurer-rose','https://player2point0.github.io/maurer-rose/')" src = "Images/MaurerRose.png">
+	</div>
+
+	<div class="landing-page" id="ai">
+		<h1 class="title">I make <b>AI</b></h1>
+	</div>
+
+	<div class="work" id="ai-work">
+		<img onclick="showPopup('Electric Sheep','LD44 game', 'https://github.com/player2point0/LD44','https://player2point0.itch.io/electric-sheep')" src = "Images/ElectricSheep.png">
+		<img onclick="showPopup('Flappy birds predictor','predicts flappy birds', 'https://github.com/player2point0/Flappy-Bird-Clone','')" src = "Images/placeholder.png">
+		<img onclick="showPopup('Kainos AI Camp Hackathon','', '','')" src = "Images/placeholder.png">
 	</div>
 
 	<div class="landing-page" id="games">
@@ -66,35 +78,13 @@
 	</div>
 
 	<div class="work" id="games-work">
-		<img data-toggle="modal" data-target="#exampleModal" onclick="showPopup('Forgetting Things','A game made for Ludum dare 39 on the theme of running out of power. \n If knowledge is power then forgetting things must be equivalent to having chunks of your battery disappear. \n In forgetting things you control a cube that is prone to forgetting the controls. The cube doesn’t really mind it but you may find that it leaves you slightly powerless at times. This can make jumping or moving left and right towards the end more challenging. Meaning you may have to approach a problem in a different way.', 'https://player2point0.itch.io/forgetting-things','https://ldjam.com/events/ludum-dare/39/forgetting-things')" src = "Images/ForgettingThings.png">
+		<img onclick="showPopup('Forgetting Things','A game made for Ludum dare 39 on the theme of running out of power. \n If knowledge is power then forgetting things must be equivalent to having chunks of your battery disappear. \n In forgetting things you control a cube that is prone to forgetting the controls. The cube doesn’t really mind it but you may find that it leaves you slightly powerless at times. This can make jumping or moving left and right towards the end more challenging. Meaning you may have to approach a problem in a different way.', 'https://player2point0.itch.io/forgetting-things','https://ldjam.com/events/ludum-dare/39/forgetting-things')" src = "Images/ForgettingThings.png">
 		<img onclick="showPopup('Simon Types', 'A simon says style typing game created for a free code camp challenge.', 'https://github.com/player2point0/simon-types', 'https://player2point0.github.io/simon-types/')" src = "Images/SimonTypes.png">
 		<img onclick="showPopup('Hotel Hilbert', 'A puzzle game made for Ludum Dare 42.', 'https://github.com/player2point0/HilbertsHotel', 'https://player2point0.itch.io/hilberts-hotel')" src = "Images/HotelHilbert.png">
-	</div>
-	
-<!--
-	<div class="landing-page" id="apps">
-		<h1 class="title">I make <b>Apps</b></h1>
-	</div>
-
-	<div class="work" id="apps-work">
-		<img onclick="showPopup('game1','text','link','github')" src = "Images/placeholder.png">
-		<img onclick="showPopup('game1','text','link','github')" src = "Images/placeholder.png">
-		<img onclick="showPopup('game1','text','link','github')" src = "Images/placeholder.png">
-		<img onclick="showPopup('game1','text','link','github')" src = "Images/placeholder.png">
-	</div>
--->
-	<div class="landing-page" id="miscellaneous">
-		<h1 class="title">I make <b>Miscellaneous</b></h1>
-	</div>
-
-	<div class="work" id="miscellaneous-work">
-		<img onclick="showPopup('Bloom','A randomly colored set of rotating shapes of increasing size and number of sides. Originally intended to look like a flower but that didn\'t really work out.' ,'https://github.com/player2point0/bloom','https://player2point0.github.io/bloom/')" src = "Images/Bloom.png">
-		<img onclick="showPopup('Maurer Rose','An implementation of a Maurer Rose with random parameters in P5.js.','https://github.com/player2point0/maurer-rose','https://player2point0.github.io/maurer-rose/')" src = "Images/MaurerRose.png">
 	</div>
 
 	<div id="footer">
 		<h3>Copyright © 2017 Nathan Nash</h3>
 	</div>
-
 </body>
 </html>
