@@ -69,7 +69,7 @@
 	overflow: auto;
 }
 
-.popup-link{
+.popup-link, .popup-link-github{
 	text-align: center;
 	font-size: 2rem;
 	padding: 10px;

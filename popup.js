@@ -3,7 +3,7 @@ function hidePopup()
 	$(".popup-background").css("display","none");
 }
 
-function showPopup(title,description,link,github)
+function showPopup(title,description,github,link)
 {
 	$(".popup-background").css("display","inline-grid");
 
